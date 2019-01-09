@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<title>centerDiv</title>
+	<script type='text/javascript' src="js/jquery-3.3.1.min.js"></script>
+	<script type='text/javascript' src="js/script.js"></script>
+	<style type="text/css">		
+		/* RESET */
+		body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+		table{border-collapse:collapse;border-spacing:0;}
+		fieldset,img{border:0;}
+		address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+		ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;}
+
+		/* CODE */
+		html{
+			height: 100%;
+		}
+		body{
+			background-color: black;
+			min-height: 100%;
+			width: 100%;
+		}
+		.obj{
+			position: fixed;
+			border-radius: 100%;			
+			border-style: solid;
+			border-width: 50px;
+			border-color: rgba(255, 255, 255, 0.2);
+
+		}
+		.player{
+			position: absolute;
+			opacity: 0.5;
+			border: 2px solid red;
+			border-radius: 100%;
+			top: 50%;
+  			left: 50%;
+  			transform: translate(-50% , -50%);
+  			-webkit-transform: translate(-50%, -50%);
+		}
+		.logs{
+			position: absolute;
+			font-size:54px;
+			color:white;
+		}
+		.playpanel{
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: gray;
+			padding: 10px;
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			
+			display: none;
+		}
+		.border{
+			border: solid 2px #fff;
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="logs">
+		<div id="log"></div>
+		<div id="log2"></div>
+		<div id="log3"></div>
+		<div id="log4"></div>
+		<div id="log5"></div>
+	</div>	
+	<div class="obj" id="obj">
+		<div class="player" id="player"></div>
+	</div>
+	<div class="playpanel">
+		<div class="border"></div>
+	</div>
+</body>
+</html>
